@@ -1,7 +1,11 @@
 import Profile from './components/Profile/Profile';
 import userData from './data/userData.json';
 import Statistics from './components/Statistics/Statistics';
-import StatData from './data/statistical-data.json';
+import StatData from './data/statisticalData.json';
+import FriendList from './components/FriendList/FriendList';
+import Friends from './data/friends.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './data/transactions.json';
 
 export default function App(params) {
     return (
@@ -14,6 +18,8 @@ export default function App(params) {
                 stats={userData.stats}
             />
             <Statistics title="HFHFHFH" stats={StatData} />
+            <FriendList friends={Friends} id={Friends.id} />
+            <TransactionHistory items={transactions} />
         </div>
     );
 }
