@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import TransactionItem from '../TransactionItem /TransactionItem';
 import s from './TransactionHistory.module.css';

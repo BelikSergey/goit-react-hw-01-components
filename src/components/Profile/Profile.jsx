@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImg from '../../img/avatar.jpeg';
 import styles from './profile.module.css';

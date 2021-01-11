@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import StatisticElement from '../StatisticElement/StatisticElement';
 import s from './Statistics.module.css';
