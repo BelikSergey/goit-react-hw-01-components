@@ -18,7 +18,7 @@ export default function App(params) {
                 stats={userData.stats}
             />
             <Statistics title="HFHFHFH" stats={StatData} />
-            <FriendList friends={Friends} id={Friends.id} />
+            <FriendList friends={Friends} />
             <TransactionHistory items={transactions} />
         </div>
     );

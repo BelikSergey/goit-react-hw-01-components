@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import s from './friend.module.css';
-import defaultImg from '../img/avatar.jpeg';
+import defaultImg from '../../img/avatar.jpeg';
+import s from './FriendListItem.module.css';
 
-function Friend({ avatar = defaultImg, name = 'name', isOnline }) {
+function FriendListItem({ avatar = defaultImg, name = 'name', isOnline }) {
     return (
         <>
             <span className={isOnline ? s.statusOnline : s.statusOffline}>
@@ -16,9 +16,9 @@ function Friend({ avatar = defaultImg, name = 'name', isOnline }) {
         </>
     );
 }
-Friend.propTypes = {
+FriendListItem.propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string,
     isOnline: PropTypes.bool.isRequired,
 };
-export default Friend;
+export default FriendListItem;
